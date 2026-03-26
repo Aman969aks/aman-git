@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background: rgb(234, 228, 213);
+    color: rgb(0, 0, 0);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+.header-container{
+    width:90%;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+header{
+    background:rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 1000;
+    padding: 10px 0;
+    transition: all 0.4s ease;
+}
+
+.header-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo-icon{
+    width:40px;
+    border-radius: 50px;
+
+}
+
+.logo-text{
+    font-size:25px;
+    font-weight: 800;
+    color:rgb(167, 167, 123);
+    letter-spacing: 2px;
+}
+
+.logo-text span{
+    color:rgb(242, 242, 242);
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a{
+    text-decoration: none;
+    color:rgb(167, 167, 123);
+    font-size: 16px;
+    position: relative;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a::after{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: rgb(167, 167, 123);
+    transition: width 0.3s ;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+.nav button{
+    display: flex;
+    font-size: 16px;
+    gap: 15px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+.btn-primary{
+    background: rgb(167, 167, 123);
+    color:rgb(242, 242, 242);
+}
+
+.btn-primary:hover{
+    background: rgb(167, 167, 123);
+    transform: translatey(-3px);  
+}
+
+.btn-secondry{
+    background: transparent;
+    color: rgb(167, 167, 123);
+    border:2px solid  rgb(167, 167, 123);
+}
+
+.btn-secondry:hover{
+    background: rgb(234, 228, 213);
+    transform: translatey(-3px);
+}
+
+
+
